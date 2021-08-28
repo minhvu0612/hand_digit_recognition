@@ -56,7 +56,7 @@ class App(tk.Tk):
         
         # predict what the image is...
         digit, acc = predict_digit(im)
-        print(digit, acc)
+        #print(digit, acc)
         #self.label.configure(text= str(digit)+', '+ str(int(acc*100))+'%')
 
     def draw_lines(self, event):
