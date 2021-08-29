@@ -64,7 +64,6 @@ model = Model(inputs = input, outputs = output)
 model.summary()
 
 epochs = 100
-opt = keras.optimizers.Adam(learning_rate=0.01)
 model.compile(loss = 'categorical_crossentropy', optimizer = "adam", metrics=['accuracy'])
 hist = model.fit(train_generator, epochs = epochs, verbose = 1, validation_data = valid_generator)
 print("The model has successfully trained")
